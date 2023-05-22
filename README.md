@@ -185,7 +185,8 @@ if(true) { //some code... } else { //some code... }
 
 
 //Цифри
-   int number = int.Parse(Console.ReadLine()); 
+      
+      int number = int.Parse(Console.ReadLine()); 
             int firstDigit = number / 100; 
             int secondDigit = (number / 10) % 10; //2Т
             int thirdDigit = number % 10; //2Т
