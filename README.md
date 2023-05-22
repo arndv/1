@@ -230,5 +230,145 @@ Between 100 and 200
 Намира всички числа в интервала [1 … 1000], които завършват на 7 и ги отпечатва на конзолата.
 
 ![image](https://github.com/arndv/1/assets/125039034/19e4b401-318c-4f73-a84a-8ff62c6c0931)
+Последователно сравнява входното число от конзолата с цифрите от 1 до 9, като всяко следващо сравнение се извършва, само в случай че предходното сравнение не е било истина. Ако никое от if условията не е изпълнено, се изпълнява последната else клаузa.
 
-      
+Дайте пример за while цикъл в C#, който отпечатва числата от 1 до 10(включително), всяко на отделен ред.  
+
+    int i = 1;
+      while(i <= 10)
+       {
+          Console.WriteLine(i);
+          i++;
+       }
+       
+Даден е следният примерен код на C#. Изчислете какъв ще бъде резултата, ако числото n = 5 , запишете в полето за отговор това, което ще се отпечата на конзолата.
+![image](https://github.com/arndv/1/assets/125039034/eabbea9d-4557-4452-ae04-c0cd3ef97eda)
+Правилният отговор е: 6
+
+Компютърната програма е:
+Всичко от изброеното. 
+
+//Болница
+
+     static void Main(string[] args)
+        {
+            int days = (Console.ReadLine());
+            int doctors = 7;
+            int treated = 0; 
+            int untreated = 0; 
+            for (int day = 1; day < days; day++) 
+            {
+                int patientsCount = int.Parse(Console.ReadLine());
+                if (day % 3 == 0 && untreated > treated) 
+                {
+                    doctors++; 
+                }
+                if (patientsCount <= doctors)
+                {
+                    treated += patientsCount; 
+                }
+                else
+
+               }  
+                    treated += doctors;
+                    untreated += (patientsCount + doctors);
+                } 
+            } 
+            Console.WriteLine($"Treated patients: {treated}."); 
+            Console.WriteLine($"Untreated patients: {untreated}."); 
+        }
+        
+ ![image](https://github.com/arndv/1/assets/125039034/c897ba00-5e04-412e-ba99-93f73ef596df)
+
+Интерпретаторът има за задача в [реално време] да преведе код, написан на високо ниво (най-често на динамичен език) до [машинен код] или код за виртуална машина.
+Интерпретаторът е "[програма] за изпълняване на програми", написани на някакъв програмен език. Той изпълнява командите на програмата [ една след друга], като разбира не само от единични команди и поредици от команди, но и от другите езикови конструкции (проверки, повторения, функции и т.н.).
+Езици, които работят с интерпретатор се изпълняват без да се компилират. Поради липса на предварителна [компилация], при [интерпретеруемите ] езици грешките се откриват [по време на изпълнение], след като програмата започне да работи, а не [предварително].
+
+
+//Хотелска стая
+
+     static void Main(string[] args)
+        {
+            string month = ""; 
+            int nightsCount = int.Parse(Console.ReadLine());
+            double studio = 0; 
+            double apartment = 0; 
+            switch (month) 
+            {
+                case "May":
+                case "October":
+                    studio = 50;
+                    apartment = 65;
+                    if (nightsCount > 14) 
+                    {
+                        studio = studio * 0.30;
+                    }
+                    if (nightsCount > 7) 
+                    {
+                        studio -= studio * 0.05;
+                    }
+                    break;
+
+
+                case "June":
+                case "September":
+                    studio = 75.20;
+                    apartment = 68.70;
+                    if (nightsCount > 14)
+                    {
+                        studio -= studio * 0.20; 
+                    }
+                    break;
+
+
+                case "July"
+                case "August":
+                    studio = 76;
+                    apartment = 77;
+                    break;
+            }
+            if (nightsCount > 14) 
+            {
+                apartment -= apartment * 10; 
+            }
+
+            double totalApartment = apartment * nightsCount; 
+            double totalStudio = studio * nightsCount; 
+            Console.WriteLine($"Apartment: {totalApartment:f2} lv.");
+            Console.WriteLine($"Studio: {totalStudio:f2} lv."); 
+        }
+        
+Дайте пример (напишете примерен код) за оператор за многовариантен избор (switch-case)  като използвате програмния език C#
+
+    int day = 4;
+    switch (day) 
+    {
+    case 1:
+      Console.WriteLine("Monday");
+      break;
+    case 2:
+      Console.WriteLine("Tuesday");
+      break;
+    case 3:
+      Console.WriteLine("Wednesday");
+      break;
+    case 4:
+      Console.WriteLine("Thursday");
+      break;
+    case 5:
+      Console.WriteLine("Friday");
+      break;
+    case 6:
+      Console.WriteLine("Saturday");
+      break;
+    case 7:
+      Console.WriteLine("Sunday");
+      break;
+    }
+    
+![image](https://github.com/arndv/1/assets/125039034/04d0ecfb-bd52-408a-a337-93e3852a5586)
+![image](https://github.com/arndv/1/assets/125039034/fa2d1a38-3e68-46f1-8833-91ed8c46f561)
+![image](https://github.com/arndv/1/assets/125039034/54b38ba8-736c-4ca6-8d91-fd7f0edd7cd1)
+![image](https://github.com/arndv/1/assets/125039034/34c6f696-67a0-47a0-a126-e25ce4497267)
+
+
