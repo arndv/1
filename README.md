@@ -22,11 +22,11 @@ Visual Studio
 
 Показан е следният програмен фрагмент на C#. Обобщете какъв ще бъде резултатът от изпълнението на програмата?
 
-int n  = int.Parse(Console.ReadLine());
-for (int i = n; i > 0; i--)
-{
- Console.WriteLine(i);
-}
+    int n  = int.Parse(Console.ReadLine());
+    for (int i = n; i > 0; i--)
+    {
+     Console.WriteLine(i);
+    }
 
 Правилният отговор е: Програмата прочита едно целочислено число. След което цикълът отпечатва числата от 1 до това число n в обратен ред, като всяко едно от числата се отпечатва на отделен ред.
 
@@ -136,22 +136,22 @@ if(true) { //some code... } else { //some code... }
 
 Дайте пример за метод (напишете примерен код), който сумира числата от 1 до n включително и като резултат връща тази сума. За примера използвайте код написан на програмния език C#.
 
- public static int SumNumbers(int n)
- {
+     public static int SumNumbers(int n)
+     {
        int sum = 0;
        for (int i = 1; i <= n; i++)
        {
             sum += i;
         }
        return sum;
-}
+     }
 
 Дайте пример за for - цикъл в C#. За пример може да ползвате код, който отпечатва на конзолата числата от 1 до 100.
 
-for (int i = 1; i <= 100; i++)
-{
+    for (int i = 1; i <= 100; i++)
+    {
       Console.WriteLine(i);
-}
+    }
 
 
 Посочете кое от изброените НЕ е вярно за стойностните типове данни?
@@ -193,7 +193,8 @@ for (int i = 1; i <= 100; i++)
             
 Напишете метод на C#, който отпечатва на конзолата квадрат от звездички с размери nхn. //kvadrat sus zvezdichki//
 
-public void PrintSquare(int n)
+   
+     public void PrintSquare(int n)
         {
             for (int i = 1; i <= n; i++)
             {
